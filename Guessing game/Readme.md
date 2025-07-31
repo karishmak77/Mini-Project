@@ -1,7 +1,7 @@
 # 🎯 Guess the Number – JavaScript mini Project
 
 A simple yet interactive number guessing game built using **vanilla JavaScript**.  
-link :-https://karishmak77.github.io/Mini-Project/Guessing game/index.html
+link :-https://karishmak77.github.io/Mini-Project/Guessing%20game/index.html
 
 ---
 
