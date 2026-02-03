@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fake News Generator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📰 Fake News Generator</h1>
+
+      <button onclick="generateNews()">Generate Fake News</button>
+
+      <p id="news"></p>
+    </div>
+
+    <script>
+      function generateNews() {
+        fetch("/generate")
+          .then((res) => res.json())
+          .then((data) => {
+            document.getElementById("news").innerText = data.headline;
+          });
+      }
+    </script>
+  </body>
+</html>
